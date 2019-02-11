@@ -55,9 +55,9 @@ public class AnimalTest
      */
     public void toStringTest() throws AssertException
     {
+    	String expted = "Jeff, a blue-colored animal. 100.0 pounds, 10.0 inches\n";
     	Animal animal = new Animal("blue", "Jeff", 100.0, 10.0);
     	String actl = animal.toString();
-    	String expted = "Jeff, a blue-colored animal. 100.0 pounds, 10.0 inches";
     	Assert.assertEquals(expted, actl);
     	
     }
@@ -71,20 +71,21 @@ public class AnimalTest
     	
     	String strg = "color, name, 10.0, 10.0";
     	
-    	Animal test = new Animal(color, name, height, weight);
+    	Animal testA = new Animal(color, name, height, weight);
+    	Animal testB = new Animal(color, name, height, weight);
     			
     			
     	//Test same-object condition of method
-    	Assert.assertTrue(this.equals(test));
+    	Assert.assertTrue(testA.equals(testB));
     			
     	//Test not-an-Animal condition of method
-    	Assert.assertFalse(test.equals(strg));
+    	Assert.assertFalse(testA.equals(strg));
     			
     	//Test all-fields-match condition of method
-    	Assert.assertEquals("color", test.getColor());
-    	Assert.assertEquals("name", test.getName());
-    	Assert.assertEquals(10.0, test.getHeight(), .01);
-    	Assert.assertEquals(10.0, test.getWeight(), .01);
+    	Assert.assertEquals("color", testA.getColor());
+    	Assert.assertEquals("name", testA.getName());
+    	Assert.assertEquals(10.0, testA.getHeight(), .01);
+    	Assert.assertEquals(10.0, testA.getWeight(), .01);
     	
     			
     }
