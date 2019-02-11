@@ -57,7 +57,7 @@ public class AnimalTest
     {
     	Animal animal = new Animal("blue", "Jeff", 100.0, 10.0);
     	String actl = animal.toString();
-    	String expted = "Jeff, a blue-colored animal. 100.0 pounds, 10.0 inches.\n";
+    	String expted = "Jeff, a blue-colored animal. 100.0 pounds, 10.0 inches\n";
     	Assert.assertEquals(expted, actl);
     	Assert.assertEquals(10.0, animal.getHeight());
     	Assert.assertEquals(10.0, animal.getWeight());

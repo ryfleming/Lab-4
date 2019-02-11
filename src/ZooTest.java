@@ -16,7 +16,7 @@ public class ZooTest
 	public void getTotalHeightTest() throws AssertException
 	{
 		
-		Zoo test = new Zoo(0);
+		Zoo test = new Zoo(1);
 		Animal lion = new Animal("Yellow", "Simba", 50.0, 30.0);
 		Animal tiger = new Animal("Orange", "Garfield", 80.0, 50.0);
 		Animal bear = new Animal("Brown", "Yogi", 120.0, 70.0);
@@ -36,7 +36,7 @@ public class ZooTest
 	public void getCapacityTest() throws AssertException
 	{
 
-		Zoo test = new Zoo(0);
+		Zoo test = new Zoo(1);
 		Animal lion = new Animal("Yellow", "Simba", 50.0, 30.0);
 		Animal tiger = new Animal("Orange", "Garfield", 80.0, 50.0);
 		Animal bear = new Animal("Brown", "Yogi", 120.0, 70.0);
@@ -55,10 +55,10 @@ public class ZooTest
 	public void toStringTest() throws AssertException
 	{
 
-		Zoo test = new Zoo(0);
-		Animal lion = new Animal("yellow", "Simba", 50.0, 30.0);
-		Animal tiger = new Animal("orange", "Garfield", 80.0, 50.0);
-		Animal bear = new Animal("brown", "Yogi", 120.0, 70.0);
+		Zoo test = new Zoo(1);
+		Animal lion = new Animal("Yellow", "Simba", 50.0, 30.0);
+		Animal tiger = new Animal("Orange", "Garfield", 80.0, 50.0);
+		Animal bear = new Animal("Brown", "Yogi", 120.0, 70.0);
 		
 		test.addAnimal(lion);
 		test.addAnimal(tiger);
