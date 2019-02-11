@@ -54,7 +54,7 @@ public class EquipmentTest
 	
 	public void equalsTest() throws AssertException
 	{
-		
+		//Equipment test = new Equipment("sdaf");
 	}
 	
 }
