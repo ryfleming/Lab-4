@@ -9,6 +9,10 @@
 public class ZooTest
 {
 
+	/**
+	 * Test class Zoo getTotalHeight() method
+	 * @throws AssertException
+	 */
 	public void getTotalHeightTest() throws AssertException
 	{
 		
@@ -26,6 +30,10 @@ public class ZooTest
 		
 	}
 	
+	/**
+	 * Test class Zoo getCapacity() method
+	 * @throws AssertException
+	 */
 	public void getCapacityTest() throws AssertException
 	{
 
@@ -41,6 +49,10 @@ public class ZooTest
 		Assert.assertEquals(3, test.getCapacity());
 	}
 	
+	/**
+	 * Test class Zoo toString() method
+	 * @throws AssertException
+	 */
 	public void toStringTest() throws AssertException
 	{
 
@@ -59,9 +71,5 @@ public class ZooTest
 		
 		Assert.assertEquals(strg, test.toString());
 	}
-	
-	
-	
-	
 	
 }
