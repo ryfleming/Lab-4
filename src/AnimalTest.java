@@ -3,6 +3,9 @@
  *
  * @author Stephen Thung, references previous code from Dr.Fagg, Taner Davis
  * @version 2018-08-25
+ * 
+ * @versionAuthor Ry Fleming
+ * @version 2018-2-11
  */
 public class AnimalTest
 {

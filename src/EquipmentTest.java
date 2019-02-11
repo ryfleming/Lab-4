@@ -2,7 +2,7 @@
  * Testing for class Equipment object
  * 
  * @author Ry Fleming
- * @version 2019-02-10
+ * @version 2019-02-11
  * 
  */
 
