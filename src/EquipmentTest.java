@@ -6,13 +6,14 @@
  * 
  */
 
+
 public class EquipmentTest
 {
 	
 	/**
 	 * Test the Equipment constructor and the getters
 	 */
-	
+
 	public void ConstructorTest() throws AssertException
 	{
 		//arbitrary string of proper format
@@ -57,21 +58,22 @@ public class EquipmentTest
 		//arbitrary string of proper format
 		String strg = "name/5,5.0,50.0,a test description";
 		
-		Equipment test = new Equipment(strg);
+		Equipment testA = new Equipment(strg);
+		Equipment testB = new Equipment(strg);
 		
 		
 		//Test same-object condition of method
-		Assert.assertTrue(this.equals(test));
+		Assert.assertTrue(testA.equals(testB));
 		
 		//Test not-an-Equipment condition of method
-		Assert.assertFalse(test.equals(strg));
+		Assert.assertFalse(testA.equals(strg));
 		
 		//Test all-fields-match condition of method
-		Assert.assertEquals("name", test.getName());
-		Assert.assertEquals(5, test.getCount());
-		Assert.assertEquals(5.0, test.getTotalWeight(), .01);
-		Assert.assertEquals(50.0, test.getTotalPrice(), .01);
-		Assert.assertEquals("a test description", test.getDescription());
+		Assert.assertEquals("name", testA.getName());
+		Assert.assertEquals(5, testA.getCount());
+		Assert.assertEquals(5.0, testA.getTotalWeight(), .01);
+		Assert.assertEquals(50.0, testA.getTotalPrice(), .01);
+		Assert.assertEquals("a test description", testA.getDescription());
 		
 		
 	}
