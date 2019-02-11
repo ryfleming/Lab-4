@@ -54,7 +54,26 @@ public class EquipmentTest
 	
 	public void equalsTest() throws AssertException
 	{
-		//Equipment test = new Equipment("sdaf");
+		//arbitrary string of proper format
+		String strg = "name/5,5.0,50.0,a test description";
+		
+		Equipment test = new Equipment(strg);
+		
+		
+		//Test same-object condition of method
+		Assert.assertTrue(this.equals(test));
+		
+		//Test not-an-Equipment condition of method
+		Assert.assertFalse(test.equals(strg));
+		
+		//Test all-fields-match condition of method
+		Assert.assertEquals("name", test.getName());
+		Assert.assertEquals(5, test.getCount());
+		Assert.assertEquals(5.0, test.getTotalWeight(), .01);
+		Assert.assertEquals(50.0, test.getTotalPrice(), .01);
+		Assert.assertEquals("a test description", test.getDescription());
+		
+		
 	}
 	
 }

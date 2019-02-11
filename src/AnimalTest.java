@@ -26,7 +26,6 @@ public class AnimalTest
      * Test full Animal constructor and getters
      * @throws AssertException
      */
-    // TODO: test full constructor, getters, and toString
     
     public void fullConstructorTest() throws AssertException
     {
@@ -60,6 +59,33 @@ public class AnimalTest
     	Assert.assertEquals(10.0, animal.getHeight());
     	Assert.assertEquals(10.0, animal.getWeight());
     	
+    }
+    
+    public void equalsTest() throws AssertException
+    {
+    	String color = "color";
+    	String name = "name";
+    	double height = 10.0;
+    	double weight = 10.0;
+    	
+    	String strg = "color, name, 10.0, 10.0";
+    	
+    	Animal test = new Animal(color, name, height, weight);
+    			
+    			
+    	//Test same-object condition of method
+    	Assert.assertTrue(this.equals(test));
+    			
+    	//Test not-an-Animal condition of method
+    	Assert.assertFalse(test.equals(strg));
+    			
+    	//Test all-fields-match condition of method
+    	Assert.assertEquals("color", test.getColor());
+    	Assert.assertEquals("name", test.getName());
+    	Assert.assertEquals(10.0, test.getHeight(), .01);
+    	Assert.assertEquals(10.0, test.getWeight(), .01);
+    	
+    			
     }
     
 }
